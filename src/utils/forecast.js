@@ -6,7 +6,7 @@ const url = `https://api.darksky.net/forecast/0cd53e0bc4263a75e704c623ee568d8a/$
         url,
         json: true
     }, (error, {body}) => {
-        console.log(body)
+
         if(error){
             callback('Request cannot be completed')
         } else if(body.error) {
